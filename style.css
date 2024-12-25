@@ -1,41 +1,41 @@
 /* Sayfa düzenlemeleri */
 body {
-  background-color: #230E12; /* Sayfa arka planı */
-  color: white; /* Yazı rengi beyaz */
-  font-family: Arial, sans-serif; /* Yazı tipi */
+  background-color: #230E12; 
+  color: white; 
+  font-family: Arial, sans-serif; 
   margin: 0;
   padding: 0;
-  height: 100vh; /* Sayfanın tamamını kaplasın */
+  height: 100vh; 
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: left;
 }
 
-/* Kayarak gelen yazının arka planını ayarlamak için animasyon */
+
 @keyframes slide {
   0% {
-    background-color: #277CE0; /* Başlangıç rengi */
+    background-color: #277CE0; 
     left: 100%;
   }
   100% {
-    background-color: #277CE0; /* Bitiş rengi */
+    background-color: #277CE0; 
     left: -100%;
   }
 }
 
-/* Başlık için temel stil */
+
 .title {
     position: relative;
     display: inline-block;
     font-size: 2rem;
     padding: 10px;
     cursor: pointer;
-    color: #fff; /* Yazı rengi */
+    color: #fff; 
     text-transform: uppercase;
 }
 
-/* Başlık üzerine gelindiğinde */
+
 .title::before {
     content: ''; 
     position: absolute;
@@ -43,21 +43,21 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #277CE0;  /* Arka plan rengi */
-    transition: transform 0.5s ease;  /* Yavaş kayma efekti */
-    transform: scaleX(0);  /* Başlangıçta görünmez */
-    transform-origin: bottom right; /* Animasyonun sağ alt köşeden başlaması */
+    background-color: #277CE0;  
+    transition: transform 0.5s ease; 
+    transform: scaleX(0);  
+    transform-origin: bottom right; 
 }
 
-/* Hover durumu */
+
 .title:hover::before {
-    transform: scaleX(1);  /* Hover ile genişleyerek görünür */
-    transform-origin: bottom left; /* Animasyonun sol alt köşeden başlaması */
+    transform: scaleX(1);  
+    transform-origin: bottom left;
 }
 
 #intro-text {
     position: absolute;
-    bottom: 100px;  /* Ekranın 100px yukarısından başlasın */
-    right: 50px;  /* Ekranın 50px sol tarafından başlasın */
+    bottom: 100px;  
+    right: 50px; 
   
 }
