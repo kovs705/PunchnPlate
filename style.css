@@ -54,6 +54,16 @@ body {
     transform-origin: bottom left;
 }
 
+.main-title {
+    text-align: left;
+    top: 100px;  
+    left: 50px; 
+    margin-top: 50px; 
+    font-size: 2rem;
+    color: #fff; 
+    text-transform: uppercase;
+    
+}
 #intro-text {
     position: absolute;
     bottom: 100px;  
