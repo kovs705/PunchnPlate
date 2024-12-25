@@ -1,6 +1,6 @@
 /* Sayfa düzenlemeleri */
 body {
-  background-color: #277CE0; /* Sayfa arka planı */
+  background-color: #FFFFFF; /* Sayfa arka planı */
   color: white; /* Yazı rengi beyaz */
   font-family: Arial, sans-serif; /* Yazı tipi */
   margin: 0;
@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: left;
 }
 
 /* Kayarak gelen yazının arka planını ayarlamak için animasyon */
