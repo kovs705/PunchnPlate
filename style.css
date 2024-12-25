@@ -24,27 +24,37 @@ body {
   }
 }
 
-/* Kayarak gelen yazının stili */
-.slide-effect {
-  position: relative;
-  display: inline-block;
-  font-size: 36px;
-  font-weight: bold;
-  color: white;
-  padding-left: 20px;
-  overflow: hidden;
+/* Başlık için temel stil */
+.title {
+    position: relative;
+    display: inline-block;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff; /* Yazı rengi */
+    text-transform: uppercase;
 }
 
-.slide-effect:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 100%;
-  width: 100%;
-  height: 100%;
-  background-color: #277CE0; /* Arka plan rengi */
-  animation: slide 3s linear infinite; /* Kayarak geçiş animasyonu */
+/* Başlık üzerine gelindiğinde */
+.title::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #277CE0;  /* Arka plan rengi */
+    transition: transform 0.5s ease;  /* Yavaş kayma efekti */
+    transform: scaleX(0);  /* Başlangıçta görünmez */
+    transform-origin: bottom right; /* Animasyonun sağ alt köşeden başlaması */
 }
+
+/* Hover durumu */
+.title:hover::before {
+    transform: scaleX(1);  /* Hover ile genişleyerek görünür */
+    transform-origin: bottom left; /* Animasyonun sol alt köşeden başlaması */
+}
+
 #intro-text {
     position: absolute;
     bottom: 100px;  /* Ekranın 100px yukarısından başlasın */
