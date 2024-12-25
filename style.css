@@ -1,6 +1,6 @@
 /* Sayfa düzenlemeleri */
 body {
-  background-color: #FFFFFF; /* Sayfa arka planı */
+  background-color: #230E12; /* Sayfa arka planı */
   color: white; /* Yazı rengi beyaz */
   font-family: Arial, sans-serif; /* Yazı tipi */
   margin: 0;
@@ -44,4 +44,10 @@ body {
   height: 100%;
   background-color: #277CE0; /* Arka plan rengi */
   animation: slide 3s linear infinite; /* Kayarak geçiş animasyonu */
+}
+#intro-text {
+    position: absolute;
+    bottom: 100px;  /* Ekranın 100px yukarısından başlasın */
+    right: 50px;  /* Ekranın 50px sol tarafından başlasın */
+  
 }
