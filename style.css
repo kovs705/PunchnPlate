@@ -78,3 +78,19 @@ body {
     right: 50px; 
   
 }
+
+.hover-group {
+    background-color: #277CE0; /* Normal hali */
+    color: white;             /* Normal hali */
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    transition: all 0.3s ease; /* Animasyonu yumuşatmak için */
+}
+
+.hover-group:hover {
+    background-color: #FF5733; /* Hover sırasında arka plan rengi */
+    color: black;              /* Hover sırasında yazı rengi */
+    transform: scale(1.1);     /* Hover sırasında hafif büyütme */
+
+}
